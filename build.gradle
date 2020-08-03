@@ -23,7 +23,6 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
     compile fileTree(dir: '/home/faraz/Desktop/IF/workspace STS/spring-boot-starter-score/build/libs', include: ['*.jar'])
 }
 
