@@ -6,4 +6,4 @@
 
 - It  watches the behavior when --score.filePath is passed and when it is not passed. 
 
-- Custom implementation of Score Interface (inside starter project) can be provided to override default logic for calculation scores.
+- Custom implementation of Score Interface (inside starter project) can be provided to override default logic for calculating scores.
