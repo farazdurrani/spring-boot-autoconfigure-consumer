@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import com.company.score.autoconfigure.Score;
 import com.company.score.autoconfigure.ScoreService;
@@ -42,13 +41,13 @@ public class ScoreApplication implements CommandLineRunner {
     @Autowired(required = false)
     private Score scoreService;
 
-//    For Demo
-//    @Bean 
+//    Comment out for Demo
+//    @org.springframework.context.annotation.Bean 
     public Score newScoreService() {
-	ScoreService score = new ScoreService() {
+	Score score = new ScoreService() {
 	    public Map<String, Integer> findScores() throws IOException {
 		Map<String, Integer> scoresMap = new HashMap<>();
-		scoresMap.put("Faraz", 12);
+		scoresMap.put("Faraz", Integer.MAX_VALUE);
 		return scoresMap;
 	    }
 	};
